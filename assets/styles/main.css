@@ -54,7 +54,9 @@ ul {
 header {
   position: sticky;
   top: 0;
-  padding: 20px 0;
+  background-color: inherit;
+  border-bottom: 1px solid var(--text-primary);
+  padding: 12px 0;
 }
 header .container {
   display: flex;
@@ -70,8 +72,11 @@ header .container .logo a{
   font-weight: bold;
   color: var(--green);
 }
+header .container nav {
+  position: relative;
+}
 header .container nav a {
-  font-size: 20px;
+  font-size: 23px;
   font-weight: bold;
   color: var(--text-secondary);
 }
@@ -80,7 +85,17 @@ header .container nav a {
     display: none;
   }
   header .container nav ul.drop_down {
+    width: 200px;
     display: block;
+    position: absolute;
+    top: 68px;
+    left: -15px;
+    border: 1px solid var(--brown);
+    background-color: var(--gold);
+  }
+  header .container nav ul li {
+    padding: 10px;
+    border-bottom: 1px solid;
   }
 }
 @media (min-width:992px) {
@@ -89,8 +104,11 @@ header .container nav a {
     align-items: center;
     gap: 20px;
   }
+  header .container nav img:last-child{
+    display: none;
+  }
   header .container nav ul {
     display: flex;
-    gap: 20px;
+    gap: 25px;
   }
 }
