@@ -8,18 +8,19 @@ html {
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
+  color: var(--bg);
 }
 :root {
-  --main-green: #6B8E23; 
-  --main-beige: #F5F5DC; 
-  --main-ivory: #FFFFF0; 
-  --gold: #DAA520; 
+  --green: #6B8E23;
+  --beige: #F5F5DC;
+  --bg: #FFFFF0;
+  --gold: #DAA520;
   --brown: #8B4513;
   --neutral-gray: #D3D3D3;
-  --text-primary: #333333; 
+  --text-primary: #333333;
   --text-secondary: #8B4513;
-  --hover: #B8860B; 
-  --button-text: #FFFFFF; 
+  --hover: #B8860B;
+  --button-text: #FFFFFF;
 }
 .container {
   padding: 0 15px;
@@ -45,4 +46,47 @@ a {
 }
 ul {
   list-style: none;
+}
+header {
+  position: sticky;
+  top: 0;
+  padding: 20px 0;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .container img {
+  width: 40px;
+  cursor: pointer;
+}
+header .container .logo a{
+  font-size: 45px;
+  font-weight: bold;
+  color: var(--green);
+}
+header .container nav a {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--text-secondary);
+}
+@media (max-width:991px) {
+  header .container nav ul {
+    display: none;
+  }
+  header .container nav ul.drop_down {
+    display: block;
+  }
+}
+@media (min-width:992px) {
+  header .container nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  header .container nav ul {
+    display: flex;
+    gap: 20px;
+  }
 }
