@@ -10,6 +10,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: var(--bg);
 }
+body.dark_mode {
+  background-color: var(--brown);
+  transition: 0.5s;
+}
 :root {
   --green: #6B8E23;
   --beige: #F5F5DC;
