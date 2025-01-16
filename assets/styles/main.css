@@ -9,6 +9,18 @@ html {
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
+:root {
+  --main-green: #6B8E23; 
+  --main-beige: #F5F5DC; 
+  --main-ivory: #FFFFF0; 
+  --gold: #DAA520; 
+  --brown: #8B4513;
+  --neutral-gray: #D3D3D3;
+  --text-primary: #333333; 
+  --text-secondary: #8B4513;
+  --hover: #B8860B; 
+  --button-text: #FFFFFF; 
+}
 .container {
   padding: 0 15px;
   margin: auto;
