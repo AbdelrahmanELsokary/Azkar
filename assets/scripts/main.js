@@ -72,4 +72,13 @@ fetch('https://www.myjsons.com/v/b7d03829')
       `;
     }
     document.getElementById('quranic').innerHTML = quranicSupplications;
+    let PrayersOfProphets = '';
+    for (let i = 0; i < azkarData['أدعية الأنبياء'].length; i++) {
+      PrayersOfProphets += `
+      <li>
+      <p>${azkarData['أدعية الأنبياء'][i].content}<span>${azkarData['أدعية الأنبياء'][i].count}Time</span></p> 
+      </li>
+      `;
+    }
+    document.getElementById('prophets').innerHTML = PrayersOfProphets;
   });
