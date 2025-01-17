@@ -22,7 +22,9 @@ fetch('https://www.myjsons.com/v/b7d03829')
     for (let i = 0; i < azkarData['أذكار الصباح'].length; i++) {
       morningRemembrance += `
       <li>
-      <p>${azkarData['أذكار الصباح'][i].content}<span>${azkarData['أذكار الصباح'][i].count}Time</span></p> 
+      <p>${azkarData['أذكار الصباح'][i].content}<span>${azkarData['أذكار الصباح'][i].count}Time</span></p>
+        <br>
+      <span>${azkarData['أذكار الصباح'][i].description}</span> 
       </li>
       `;
     }
@@ -31,7 +33,9 @@ fetch('https://www.myjsons.com/v/b7d03829')
     for (let i = 0; i < azkarData['أذكار المساء'].length; i++) {
       eveningRemembrances += `
       <li>
-      <p>${azkarData['أذكار المساء'][i].content}<span>${azkarData['أذكار المساء'][i].count}Time</span></p> 
+      <p>${azkarData['أذكار المساء'][i].content}<span>${azkarData['أذكار المساء'][i].count}Time</span></p>
+        <br>
+      <span>${azkarData['أذكار المساء'][i].description}</span>
       </li>
       `;
     }
@@ -41,6 +45,8 @@ fetch('https://www.myjsons.com/v/b7d03829')
       tasbih += `
       <li>
       <p>${azkarData['تسابيح'][i].content}<span>${azkarData['تسابيح'][i].count}Time</span></p> 
+      <br>
+      <span>${azkarData['تسابيح'][i].description}</span>
       </li>
       `;
     }
@@ -67,7 +73,9 @@ fetch('https://www.myjsons.com/v/b7d03829')
     for (let i = 0; i < azkarData['أدعية قرآنية'].length; i++) {
       quranicSupplications += `
       <li>
-      <p>${azkarData['أدعية قرآنية'][i].content}<span>${azkarData['أدعية قرآنية'][i].count}Time</span></p> 
+      <p>${azkarData['أدعية قرآنية'][i].content}<span>${azkarData['أدعية قرآنية'][i].count}Time</span></p>
+      <br>
+      <span>${azkarData['أدعية قرآنية'][i].reference}</span> 
       </li>
       `;
     }
@@ -76,7 +84,10 @@ fetch('https://www.myjsons.com/v/b7d03829')
     for (let i = 0; i < azkarData['أدعية الأنبياء'].length; i++) {
       PrayersOfProphets += `
       <li>
-      <p>${azkarData['أدعية الأنبياء'][i].content}<span>${azkarData['أدعية الأنبياء'][i].count}Time</span></p> 
+      <p>${azkarData['أدعية الأنبياء'][i].content}<span>${azkarData['أدعية الأنبياء'][i].count}Time</span>
+      </p> 
+      <br>
+      <span>${azkarData['أدعية الأنبياء'][i].description}</span>
       </li>
       `;
     }
