@@ -7,7 +7,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Amiri Quran", serif;
 }
 body.dark_mode {
   background-color: var(--brown);
@@ -59,7 +59,6 @@ header {
   top: 0;
   background-color: var(--beige);
   border-bottom: 1px solid var(--text-primary);
-  padding: 12px 0;
 }
 header .container {
   display: flex;
