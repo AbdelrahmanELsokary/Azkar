@@ -27,4 +27,13 @@ fetch('https://www.myjsons.com/v/b7d03829')
       `;
     }
     document.getElementById('morning').innerHTML = morningRemembrance;
+    let eveningRemembrances = '';
+    for (let i = 0; i < azkarData['أذكار المساء'].length; i++) {
+      eveningRemembrances += `
+      <li>
+      <p>${azkarData['أذكار المساء'][i].content}<span>${azkarData['أذكار المساء'][i].count}Time</span></p> 
+      </li>
+      `;
+    }
+    document.getElementById('evening').innerHTML = eveningRemembrances;
   });
