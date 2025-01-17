@@ -40,6 +40,17 @@ fetch('https://www.myjsons.com/v/b7d03829')
       `;
     }
     document.getElementById('evening').innerHTML = eveningRemembrances;
+    let obligatoryPrayers = '';
+    for (let i = 0; i < azkarData['أذكار بعد السلام من الصلاة المفروضة'].length; i++) {
+      obligatoryPrayers += `
+      <li>
+      <p>${azkarData['أذكار بعد السلام من الصلاة المفروضة'][i].content}<span>${azkarData['أذكار بعد السلام من الصلاة المفروضة'][i].count}Time</span></p>
+        <br>
+      <span>${azkarData['أذكار بعد السلام من الصلاة المفروضة'][i].description}</span>
+      </li>
+      `;
+    }
+    document.getElementById('obligatory_prayers').innerHTML = obligatoryPrayers;
     let tasbih = '';
     for (let i = 0; i < azkarData['تسابيح'].length; i++) {
       tasbih += `

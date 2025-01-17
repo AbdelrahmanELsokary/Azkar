@@ -17,7 +17,6 @@ body.dark_mode header {
   background-color: var(--brown);
   color: var(--green);
 }
-
 :root {
   --green: #6B8E23;
   --beige: #F5F5DC;
@@ -80,7 +79,7 @@ header .container nav {
   position: relative;
 }
 header .container nav a {
-  font-size: 23px;
+  font-size: 17px;
   font-weight: bold;
   color: var(--text-secondary);
 }
@@ -113,7 +112,7 @@ header .container nav a {
   }
   header .container nav ul {
     display: flex;
-    gap: 25px;
+    gap: 20px;
   }
 }
 .container .azkar_list {
