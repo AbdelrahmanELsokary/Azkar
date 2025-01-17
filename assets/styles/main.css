@@ -8,21 +8,25 @@ html {
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
-  color: var(--bg);
 }
 body.dark_mode {
   background-color: var(--brown);
   transition: 0.5s;
 }
+body.dark_mode header {
+  background-color: var(--brown);
+  color: var(--green);
+}
+
 :root {
   --green: #6B8E23;
   --beige: #F5F5DC;
   --bg: #FFFFF0;
   --gold: #DAA520;
   --brown: #8B4513;
+  --brown2: #492207;
   --neutral-gray: #D3D3D3;
   --text-primary: #333333;
-  --text-secondary: #8B4513;
   --hover: #B8860B;
   --button-text: #FFFFFF;
 }
@@ -114,7 +118,11 @@ header .container nav a {
 }
 .container .azkar_list {
   background-color: var(--bg);
+  border-radius: 10px;
   padding: 10px 35px;
+}
+body.dark_mode .container .azkar_list{
+  background-color: var(--brown2);
 }
 h2 {
   text-align: center;
@@ -140,9 +148,15 @@ section .container ol li p {
   background-color: var(--gold);
   padding: 20px;
 }
+body.dark_mode section .container ol li p ,
+body.dark_mode section .container ol li p span {
+  background-color: var(--brown);
+  color: var(--gold);
+}
 section .container ol li p span {
   font-size: 18px;
   letter-spacing: 1.5px;
   color: var(--beige);
+  cursor: pointer;
   margin: 10px;
 }
