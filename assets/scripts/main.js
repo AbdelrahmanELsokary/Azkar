@@ -63,4 +63,13 @@ fetch('https://www.myjsons.com/v/b7d03829')
       `;
     }
     document.getElementById('Wake-up').innerHTML = WakeUpRemembrancembrance;
+    let quranicSupplications = '';
+    for (let i = 0; i < azkarData['أدعية قرآنية'].length; i++) {
+      quranicSupplications += `
+      <li>
+      <p>${azkarData['أدعية قرآنية'][i].content}<span>${azkarData['أدعية قرآنية'][i].count}Time</span></p> 
+      </li>
+      `;
+    }
+    document.getElementById('quranic').innerHTML = quranicSupplications;
   });
