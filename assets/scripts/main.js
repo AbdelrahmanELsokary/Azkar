@@ -45,4 +45,13 @@ fetch('https://www.myjsons.com/v/b7d03829')
       `;
     }
     document.getElementById('Rosaries').innerHTML = tasbih;
+    let sleepRemembrance = '';
+    for (let i = 0; i < azkarData["أذكار النوم"].length; i++) {
+      sleepRemembrance += `
+      <li>
+      <p>${azkarData["أذكار النوم"][i].content}<span>${azkarData["أذكار النوم"][i].count}Time</span></p> 
+      </li>
+      `;
+    }
+    document.getElementById('sleep').innerHTML = sleepRemembrance;
   });
