@@ -36,4 +36,13 @@ fetch('https://www.myjsons.com/v/b7d03829')
       `;
     }
     document.getElementById('evening').innerHTML = eveningRemembrances;
+    let tasbih = '';
+    for (let i = 0; i < azkarData['تسابيح'].length; i++) {
+      tasbih += `
+      <li>
+      <p>${azkarData['تسابيح'][i].content}<span>${azkarData['تسابيح'][i].count}Time</span></p> 
+      </li>
+      `;
+    }
+    document.getElementById('Rosaries').innerHTML = tasbih;
   });
