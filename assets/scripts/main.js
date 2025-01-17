@@ -23,7 +23,7 @@ fetch('https://www.myjsons.com/v/b7d03829')
       morningRemembrance += `
       <li>
       <p>${azkarData['أذكار الصباح'][i].content}<span>${azkarData['أذكار الصباح'][i].count}Time</span></p>
-      <span>${azkarData['أذكار الصباح'][i].description}</span> 
+      <span class="description">${azkarData['أذكار الصباح'][i].description}</span> 
       </li>
       `;
     }
@@ -33,7 +33,7 @@ fetch('https://www.myjsons.com/v/b7d03829')
       eveningRemembrances += `
       <li>
       <p>${azkarData['أذكار المساء'][i].content}<span>${azkarData['أذكار المساء'][i].count}Time</span></p>
-      <span>${azkarData['أذكار المساء'][i].description}</span>
+      <span class="description">${azkarData['أذكار المساء'][i].description}</span>
       </li>
       `;
     }
@@ -43,7 +43,7 @@ fetch('https://www.myjsons.com/v/b7d03829')
       obligatoryPrayers += `
       <li>
       <p>${azkarData['أذكار بعد السلام من الصلاة المفروضة'][i].content}<span>${azkarData['أذكار بعد السلام من الصلاة المفروضة'][i].count}Time</span></p>
-      <span>${azkarData['أذكار بعد السلام من الصلاة المفروضة'][i].description}</span>
+      <span class="description">${azkarData['أذكار بعد السلام من الصلاة المفروضة'][i].description}</span>
       </li>
       `;
     }
@@ -53,7 +53,7 @@ fetch('https://www.myjsons.com/v/b7d03829')
       tasbih += `
       <li>
       <p>${azkarData['تسابيح'][i].content}<span>${azkarData['تسابيح'][i].count}Time</span></p> 
-      <span>${azkarData['تسابيح'][i].description}</span>
+      <span class="description">${azkarData['تسابيح'][i].description}</span>
       </li>
       `;
     }
@@ -81,7 +81,7 @@ fetch('https://www.myjsons.com/v/b7d03829')
       quranicSupplications += `
       <li>
       <p>${azkarData['أدعية قرآنية'][i].content}<span>${azkarData['أدعية قرآنية'][i].count}Time</span></p>
-      <span>${azkarData['أدعية قرآنية'][i].reference}</span> 
+      <span class="description">${azkarData['أدعية قرآنية'][i].reference}</span> 
       </li>
       `;
     }
@@ -92,7 +92,7 @@ fetch('https://www.myjsons.com/v/b7d03829')
       <li>
       <p>${azkarData['أدعية الأنبياء'][i].content}<span>${azkarData['أدعية الأنبياء'][i].count}Time</span>
       </p> 
-      <span>${azkarData['أدعية الأنبياء'][i].description}</span>
+      <span class="description">${azkarData['أدعية الأنبياء'][i].description}</span>
       </li>
       `;
     }

@@ -158,3 +158,6 @@ section .container ol li p span {
   cursor: pointer;
   margin: 10px;
 }
+section .container ol li .description {
+font-size: 18px;
+}
