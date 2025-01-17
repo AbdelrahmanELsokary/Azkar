@@ -54,7 +54,7 @@ ul {
 header {
   position: sticky;
   top: 0;
-  background-color: inherit;
+  background-color: var(--beige);
   border-bottom: 1px solid var(--text-primary);
   padding: 12px 0;
 }
@@ -88,7 +88,7 @@ header .container nav a {
     width: 200px;
     display: block;
     position: absolute;
-    top: 68px;
+    top: 61.5px;
     left: -15px;
     border: 1px solid var(--brown);
     background-color: var(--gold);
@@ -111,4 +111,38 @@ header .container nav a {
     display: flex;
     gap: 25px;
   }
+}
+.container .azkar_list {
+  background-color: var(--bg);
+  padding: 10px 35px;
+}
+h2 {
+  text-align: center;
+  color: var(--gold);
+  font-size: 35px;
+  padding: 20px 0;
+}
+section {
+  margin-top: 70px;
+}
+section .container ol li{
+  color: var(--brown);
+  padding: 20px;
+}
+section .container ol li p {
+  border-radius: 10px;
+  font-size: 26px;
+  line-height: 1.6;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  align-items: center;
+  background-color: var(--gold);
+  padding: 20px;
+}
+section .container ol li p span {
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  color: var(--beige);
+  margin: 10px;
 }
