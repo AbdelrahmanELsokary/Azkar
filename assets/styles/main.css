@@ -10,24 +10,19 @@ body {
   font-family: "Amiri Quran", serif;
 }
 body.dark_mode {
-  background-color: var(--brown);
+  background-color: var(--dark);
   transition: 0.5s;
 }
 body.dark_mode header {
-  background-color: var(--brown);
-  color: var(--green);
+  background-color: var(--black);
+  color: var(--bg);
+  border-bottom: 1px solid var(--bg);
 }
 :root {
-  --green: #6B8E23;
-  --beige: #F5F5DC;
-  --bg: #FFFFF0;
-  --gold: #DAA520;
-  --brown: #8B4513;
-  --brown2: #492207;
-  --neutral-gray: #D3D3D3;
-  --text-primary: #333333;
-  --hover: #B8860B;
-  --button-text: #FFFFFF;
+  --white: #fff;
+  --black: #000;
+  --bg: rgb(47, 185, 185);
+  --dark: rgb(3, 24, 24);
 }
 .container {
   padding: 0 15px;
@@ -57,8 +52,8 @@ ul {
 header {
   position: sticky;
   top: 0;
-  background-color: var(--beige);
-  border-bottom: 1px solid var(--text-primary);
+  background-color: var(--bg);
+  border-bottom: 1px solid var(--dark);
 }
 header .container {
   display: flex;
@@ -72,7 +67,7 @@ header .container img {
 header .container .logo a{
   font-size: 45px;
   font-weight: bold;
-  color: var(--green);
+  color: var(--black);
 }
 header .container nav {
   position: relative;
@@ -80,7 +75,10 @@ header .container nav {
 header .container nav a {
   font-size: 17px;
   font-weight: bold;
-  color: var(--text-secondary);
+  color: var(--dark);
+}
+body.dark_mode header .container a{
+  color: var(--bg);
 }
 @media (max-width:991px) {
   header .container nav ul {
@@ -90,14 +88,20 @@ header .container nav a {
     width: 200px;
     display: block;
     position: absolute;
-    top: 61.5px;
+    top: 80px;
     left: -15px;
-    border: 1px solid var(--brown);
-    background-color: var(--gold);
+    border: 1px solid var(--dark);
+    background-color: var(--bg);
+  }
+  body.dark_mode header .container nav ul {
+    background-color: var(--dark);
+    border: 1px solid var(--bg);
+  }
+  header .container nav ul li:not(:last-child) {
+    border-bottom: 1px solid;
   }
   header .container nav ul li {
     padding: 10px;
-    border-bottom: 1px solid;
   }
 }
 @media (min-width:992px) {
@@ -120,7 +124,7 @@ header .container nav a {
   padding: 10px 35px;
 }
 body.dark_mode .container .azkar_list{
-  background-color: var(--brown2);
+  background-color: var(--black);
 }
 h2 {
   text-align: center;
@@ -128,11 +132,14 @@ h2 {
   font-size: 35px;
   padding: 20px 0;
 }
+body.dark_mode h2 {
+  color: var(--white);
+}
 section {
   margin-top: 50px;
 }
 section .container ol li{
-  color: var(--brown);
+  color: var(--white);
   padding: 20px;
 }
 section .container ol li p {
@@ -143,13 +150,13 @@ section .container ol li p {
   justify-content: space-between;
   gap: 50px;
   align-items: center;
-  background-color: var(--gold);
+  background-color: var(--dark);
   padding: 20px;
 }
 body.dark_mode section .container ol li p ,
 body.dark_mode section .container ol li p span {
-  background-color: var(--brown);
-  color: var(--gold);
+  background-color: var(--dark);
+  color: var(--bg);
 }
 section .container ol li p span {
   font-size: 18px;
@@ -171,9 +178,13 @@ font-size: 19px;
 }
 .links .container a {
   display: inline-block;
-  background-color: rgb(30, 186, 186);
-  color: var(--bg);
+  background-color: var(--bg);
+  color: var(--dark);
   font-size: 30px;
   border-radius: 10px;
   padding: 30px;
+}
+body.dark_mode .links .container a {
+  background-color: var(--black);
+  color: var(--bg);
 }
