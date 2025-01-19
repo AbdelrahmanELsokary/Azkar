@@ -38,63 +38,53 @@ fetch('https://www.myjsons.com/v/b7d03829')
       `;
     }
     document.getElementById('evening').innerHTML = eveningRemembrances;
-    let obligatoryPrayers = '';
-    for (let i = 0; i < azkarData['أذكار بعد السلام من الصلاة المفروضة'].length; i++) {
-      obligatoryPrayers += `
-      <li>
-      <p>${azkarData['أذكار بعد السلام من الصلاة المفروضة'][i].content}<span>${azkarData['أذكار بعد السلام من الصلاة المفروضة'][i].count}Time</span></p>
-      <span class="description">${azkarData['أذكار بعد السلام من الصلاة المفروضة'][i].description}</span>
-      </li>
-      `;
-    }
-    document.getElementById('obligatory_prayers').innerHTML = obligatoryPrayers;
-    let tasbih = '';
-    for (let i = 0; i < azkarData['تسابيح'].length; i++) {
-      tasbih += `
-      <li>
-      <p>${azkarData['تسابيح'][i].content}<span>${azkarData['تسابيح'][i].count}Time</span></p> 
-      <span class="description">${azkarData['تسابيح'][i].description}</span>
-      </li>
-      `;
-    }
-    document.getElementById('Rosaries').innerHTML = tasbih;
-    let sleepRemembrance = '';
-    for (let i = 0; i < azkarData['أذكار النوم'].length; i++) {
-      sleepRemembrance += `
-      <li>
-      <p>${azkarData['أذكار النوم'][i].content}<span>${azkarData['أذكار النوم'][i].count}Time</span></p> 
-      </li>
-      `;
-    }
-    document.getElementById('sleep').innerHTML = sleepRemembrance;
-    let WakeUpRemembrancembrance = '';
-    for (let i = 0; i < azkarData['أذكار الاستيقاظ'].length; i++) {
-      WakeUpRemembrancembrance += `
-      <li>
-      <p>${azkarData['أذكار الاستيقاظ'][i].content}<span>${azkarData['أذكار الاستيقاظ'][i].count}Time</span></p> 
-      </li>
-      `;
-    }
-    document.getElementById('Wake-up').innerHTML = WakeUpRemembrancembrance;
-    let quranicSupplications = '';
-    for (let i = 0; i < azkarData['أدعية قرآنية'].length; i++) {
-      quranicSupplications += `
-      <li>
-      <p>${azkarData['أدعية قرآنية'][i].content}<span>${azkarData['أدعية قرآنية'][i].count}Time</span></p>
-      <span class="description">${azkarData['أدعية قرآنية'][i].reference}</span> 
-      </li>
-      `;
-    }
-    document.getElementById('quranic').innerHTML = quranicSupplications;
-    let PrayersOfProphets = '';
-    for (let i = 0; i < azkarData['أدعية الأنبياء'].length; i++) {
-      PrayersOfProphets += `
-      <li>
-      <p>${azkarData['أدعية الأنبياء'][i].content}<span>${azkarData['أدعية الأنبياء'][i].count}Time</span>
-      </p> 
-      <span class="description">${azkarData['أدعية الأنبياء'][i].description}</span>
-      </li>
-      `;
-    }
-    document.getElementById('prophets').innerHTML = PrayersOfProphets;
+    // let obligatoryPrayers = '';
+    // for (let i = 0; i < azkarData['أذكار بعد السلام من الصلاة المفروضة'].length; i++) {
+    //   obligatoryPrayers += `
+    //   <li>
+    //   <p>${azkarData['أذكار بعد السلام من الصلاة المفروضة'][i].content}<span>${azkarData['أذكار بعد السلام من الصلاة المفروضة'][i].count}Time</span></p>
+    //   <span class="description">${azkarData['أذكار بعد السلام من الصلاة المفروضة'][i].description}</span>
+    //   </li>
+    //   `;
+    // }
+    // document.getElementById('obligatory_prayers').innerHTML = obligatoryPrayers;
+    // let sleepRemembrance = '';
+    // for (let i = 0; i < azkarData['أذكار النوم'].length; i++) {
+    //   sleepRemembrance += `
+    //   <li>
+    //   <p>${azkarData['أذكار النوم'][i].content}<span>${azkarData['أذكار النوم'][i].count}Time</span></p> 
+    //   </li>
+    //   `;
+    // }
+    // document.getElementById('sleep').innerHTML = sleepRemembrance;
+    // let WakeUpRemembrancembrance = '';
+    // for (let i = 0; i < azkarData['أذكار الاستيقاظ'].length; i++) {
+    //   WakeUpRemembrancembrance += `
+    //   <li>
+    //   <p>${azkarData['أذكار الاستيقاظ'][i].content}<span>${azkarData['أذكار الاستيقاظ'][i].count}Time</span></p> 
+    //   </li>
+    //   `;
+    // }
+    // document.getElementById('Wake-up').innerHTML = WakeUpRemembrancembrance;
+    // let quranicSupplications = '';
+    // for (let i = 0; i < azkarData['أدعية قرآنية'].length; i++) {
+    //   quranicSupplications += `
+    //   <li>
+    //   <p>${azkarData['أدعية قرآنية'][i].content}<span>${azkarData['أدعية قرآنية'][i].count}Time</span></p>
+    //   <span class="description">${azkarData['أدعية قرآنية'][i].reference}</span> 
+    //   </li>
+    //   `;
+    // }
+    // document.getElementById('quranic').innerHTML = quranicSupplications;
+    // let PrayersOfProphets = '';
+    // for (let i = 0; i < azkarData['أدعية الأنبياء'].length; i++) {
+    //   PrayersOfProphets += `
+    //   <li>
+    //   <p>${azkarData['أدعية الأنبياء'][i].content}<span>${azkarData['أدعية الأنبياء'][i].count}Time</span>
+    //   </p> 
+    //   <span class="description">${azkarData['أدعية الأنبياء'][i].description}</span>
+    //   </li>
+    //   `;
+    // }
+    // document.getElementById('prophets').innerHTML = PrayersOfProphets;
   });
