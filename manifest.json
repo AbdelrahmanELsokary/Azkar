@@ -1,10 +1,10 @@
 {
-  "name": "Azkar",
-  "short_name": "Azkar",
+  "name": "azkar",
+  "short_name": "azkar",
   "theme_color": "teal",
   "background_color": "teal",
-  "display": "browser",
-  "orientation": "portrait",
+  "display": "standalone",
+  "orientation": "any",
   "scope": "/",
   "start_url": "/",
   "icons": [
