@@ -167,11 +167,13 @@ font-size: 19px;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 30px;
 }
 .links .container a {
   display: inline-block;
-  background-color: var(--brown);
+  background-color: rgb(30, 186, 186);
+  color: var(--bg);
+  font-size: 30px;
   border-radius: 10px;
   padding: 30px;
 }
