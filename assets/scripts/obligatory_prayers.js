@@ -18,13 +18,14 @@ dropDown.onclick = () => {
 fetch('https://www.myjsons.com/v/b7d03829')
   .then((response) => response.json())
   .then((azkarData) => {
-let WakeUpRemembrancembrance = '';
-    for (let i = 0; i < azkarData['أذكار الاستيقاظ'].length; i++) {
-      WakeUpRemembrancembrance += `
+    let obligatoryPrayers = '';
+    for (let i = 0; i < azkarData['أذكار بعد السلام من الصلاة المفروضة'].length; i++) {
+      obligatoryPrayers += `
       <li>
-      <p>${azkarData['أذكار الاستيقاظ'][i].content}<span>${azkarData['أذكار الاستيقاظ'][i].count}Time</span></p> 
+      <p>${azkarData['أذكار بعد السلام من الصلاة المفروضة'][i].content}<span>${azkarData['أذكار بعد السلام من الصلاة المفروضة'][i].count}Time</span></p>
+      <span class="description">${azkarData['أذكار بعد السلام من الصلاة المفروضة'][i].description}</span>
       </li>
       `;
     }
-    document.getElementById('Wake-up').innerHTML = WakeUpRemembrancembrance;
+    document.getElementById('obligatory_prayers').innerHTML = obligatoryPrayers;
   });

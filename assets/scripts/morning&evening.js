@@ -18,4 +18,5 @@ dropDown.onclick = () => {
 fetch('https://www.myjsons.com/v/b7d03829')
   .then((response) => response.json())
   .then((azkarData) => {
+    
   });
