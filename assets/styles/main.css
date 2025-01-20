@@ -22,6 +22,7 @@ body.dark_mode header {
   --white: #fff;
   --black: #000;
   --bg: rgb(47, 185, 185);
+  --bg-text: rgb(146, 202, 202);
   --dark: rgb(3, 24, 24);
 }
 .container {
@@ -150,7 +151,7 @@ section .container ol li p {
   justify-content: space-between;
   gap: 50px;
   align-items: center;
-  background-color: var(--dark);
+  background-color: var(--bg-text);
   padding: 20px;
 }
 body.dark_mode section .container ol li p ,
