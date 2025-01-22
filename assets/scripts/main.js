@@ -14,11 +14,3 @@ let toggelMenu = document.getElementById('menu');
 dropDown.onclick = () => {
   toggelMenu.classList.toggle('drop_down');
 };
-
-// fetch('https://www.myjsons.com/v/b7d03829')
-//   .then((response) => response.json())
-//   .then((azkarData) => {
-//     for (let i = 0; i < azkarData['أذكار النوم'].length; i++) {
-
-//     }
-//   });
