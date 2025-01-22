@@ -1,13 +1,3 @@
-let them = document.getElementById('them');
-them.onclick = () => {
-  if (document.body.classList.contains('dark_mode')) {
-    document.body.classList.remove('dark_mode');
-    them.src = 'assets/icons/dark.webp';
-  } else {
-    document.body.classList.add('dark_mode');
-    them.src = 'assets/icons/light.webp';
-  }
-};
 let dropDown = document.getElementById('drop_down');
 let toggelMenu = document.getElementById('menu');
 dropDown.onclick = () => {
